@@ -86,8 +86,8 @@ disp(randomDelays);
     % Store last delay for next block constraint
     prev_last_delay = randomDelays(end);
     % Go through trigOutDelay IN ORDER
-    for i = 1:length(trigOutDelay)
-        delay = trigOutDelay(i);
+    for i = 1:length(randomDelays)
+        delay = randomDelays(i);
         fprintf('\n=== Block %d | Delay = %d ms ===\n', display_block, delay);
         fprintf('Firing %d pulses...\n', PULSES_PER_DELAY);
 
@@ -141,4 +141,5 @@ disp(randomDelays);
     fprintf('Block %d saved.\n', display_block);
 
 end % block loop
+
 
