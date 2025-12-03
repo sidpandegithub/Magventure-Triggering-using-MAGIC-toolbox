@@ -120,6 +120,7 @@ disp(randomDelays);
             exp_output(pulse_count).mso_lvl = fixed_mso;
             exp_output(pulse_count).timing  = pulse_exact_time;
             exp_output(pulse_count).dur     = pause_time;
+            exp_output(pulse_count).delay = delay;
 
         end % pulse loop
 
@@ -140,3 +141,4 @@ disp(randomDelays);
     fprintf('Block %d saved.\n', display_block);
 
 end % block loop
+
